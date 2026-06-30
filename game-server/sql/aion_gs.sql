@@ -105,16 +105,22 @@ CREATE TABLE `bonus_packs` (
 -- Table structure for `bookmark`
 -- ----------------------------
 DROP TABLE IF EXISTS `bookmark`;
+
 CREATE TABLE `bookmark` (
-  `player_id` int NOT NULL,
-  `name` varchar(27) NOT NULL,
-  `world_id` int NOT NULL,
-  `x` float NOT NULL,
-  `y` float NOT NULL,
-  `z` float NOT NULL,
-  PRIMARY KEY (`player_id`, `name`)
-	CONSTRAINT `bookmark_ibfk_1` FOREIGN KEY (`player_id`) REFERENCES `players` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+													`player_id` int NOT NULL,
+	                        `name` varchar(27) NOT NULL,
+	                        `world_id` int NOT NULL,
+	                        `x` float NOT NULL,
+	                        `y` float NOT NULL,
+	                        `z` float NOT NULL,
+	                        PRIMARY KEY (`player_id`, `name`),
+	                        CONSTRAINT `bookmark_ibfk_1`
+														FOREIGN KEY (`player_id`)
+															REFERENCES `players` (`id`)
+															ON DELETE CASCADE
+															ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 -- ----------------------------
 -- Table structure for `broker`
