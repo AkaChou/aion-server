@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <in_game_shop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="in_game_shop.xsd">
-	<!-- can be more category -->
+	<!-- 可以有更多分类 / can be more category -->
 	<category id="0" name="ELYOS">
 		<sub_category id="3" name="Clothing"/>
 		<sub_category id="4" name="Hats"/>

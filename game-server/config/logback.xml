@@ -227,7 +227,7 @@
 	<logger name="PLAYERTRANSFER">
 		<appender-ref ref="app_playertransfer" />
 	</logger>
-	<logger name="org.quartz" level="WARN" /> <!-- disable info messages from quartz lib (cron service) -->
+	<logger name="org.quartz" level="WARN" /> <!-- 禁用 quartz 库（cron服务）的info消息 / disable info messages from quartz lib (cron service) -->
 	<root level="INFO">
 		<appender-ref ref="out_console" />
 		<appender-ref ref="app_console" />

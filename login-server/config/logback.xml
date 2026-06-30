@@ -60,7 +60,7 @@
 			<Pattern>${date} %message%n</Pattern>
 		</encoder>
 	</appender>
-	<logger name="com.aionemu.loginserver.network.aion.clientpackets.CM_LOGIN" level="debug" additivity="false"> <!-- server logins -->
+	<logger name="com.aionemu.loginserver.network.aion.clientpackets.CM_LOGIN" level="debug" additivity="false"> <!-- 服务器登录 / server logins -->
 		<appender-ref ref="app_login_audit" />
 	</logger>
 	<root level="INFO">
