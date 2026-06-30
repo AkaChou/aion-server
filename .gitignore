@@ -10,6 +10,9 @@ login-server/config/myls.properties
 login-server/log/
 login-server/target/
 aion/
+log/
+.codegraph
+.cursor
 
 **/.idea/
 **/.settings/
