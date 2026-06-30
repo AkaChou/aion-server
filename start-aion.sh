@@ -73,7 +73,11 @@ deploy_zip() {
   # Keep local config overrides such as mygs.properties, but refresh binaries/scripts.
   rm -rf "$service_dir/libs"
   rm -f "$service_dir/start.sh" "$service_dir/start.bat"
-  unzip -oq "$copied_zip" -d "$AION_DIR"
+  if [[ -d "$service_dir/config" ]]; then
+    unzip -oq "$copied_zip" -x "$service/config/*" -d "$AION_DIR"
+  else
+    unzip -oq "$copied_zip" -d "$AION_DIR"
+  fi
   chmod +x "$service_dir/start.sh"
   echo "Deployed $service from $(quote "$copied_zip")"
 }
