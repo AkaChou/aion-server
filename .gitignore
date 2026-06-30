@@ -9,6 +9,7 @@ game-server/target/
 login-server/config/myls.properties
 login-server/log/
 login-server/target/
+aion/
 
 **/.idea/
 **/.settings/
